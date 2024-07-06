@@ -35,7 +35,7 @@ public class WeatherServlet extends HttpServlet {
         Weather[] weatherData = Db.readWeatherData();
         
         if (weatherData != null) {
-          String json = "";
+          String json = "Hello 1.2";
           json +=  "{\n\t" +  "\"WeatherData\" : [\n";
           for (int i = 0; i < weatherData.length; i++)
           {
